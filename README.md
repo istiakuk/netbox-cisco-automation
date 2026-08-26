@@ -18,3 +18,31 @@ This repository contains an enterprise NetDevOps pipeline that extracts dynamic 
 
 ## Verified Execution Output
 
+[*] Initializing Network Automation Pipeline [MOCKED ARCHITECTURE]...
+[+] Fetching interface data from NetBox Source-of-Truth...
+Loaded data for interface: GigabitEthernet2
+[+] Rendering RESTCONF JSON payload via Automation Engine...
+Rendered Payload Preview:
+{
+"Cisco-IOS-XE-native:interface": {
+"GigabitEthernet": [
+{
+"name": "GigabitEthernet2",
+"description": "Configured via NetBox Source of Truth Automation Pipeline",
+"ip": {
+"address": {
+"primary": {
+"address": "192.168.10.1",
+"mask": "255.255.255.0"
+}
+}
+},
+"shutdown": false
+}
+]
+}
+}
+[+] Deploying RESTCONF configuration to Cisco target device...
+
+[SUCCESS] Configuration successfully synchronized from NetBox to Cisco Device via RESTCONF!
+
