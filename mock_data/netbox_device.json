@@ -1,0 +1,19 @@
+{
+  "count": 1,
+  "results": [
+    {
+      "id": 101,
+      "name": "GigabitEthernet2",
+      "description": "Configured via NetBox Source of Truth Automation Pipeline",
+      "enabled": true,
+      "untagged_vlan": {
+        "vid": 100
+      },
+      "ip_addresses": [
+        {
+          "address": "192.168.10.1/24"
+        }
+      ]
+    }
+  ]
+}

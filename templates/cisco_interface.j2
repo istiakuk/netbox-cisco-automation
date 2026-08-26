@@ -1,0 +1,19 @@
+{
+  "Cisco-IOS-XE-native:interface": {
+    "GigabitEthernet": [
+      {
+        "name": "{{ interface.name }}",
+        "description": "{{ interface.description }}",
+        "ip": {
+          "address": {
+            "primary": {
+              "address": "{{ interface.ip_address }}",
+              "mask": "{{ interface.subnet_mask }}"
+            }
+          }
+        },
+        "shutdown": {{ not interface.enabled | lower }}
+      }
+    ]
+  }
+}
